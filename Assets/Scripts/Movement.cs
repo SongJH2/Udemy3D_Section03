@@ -26,7 +26,6 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            //Debug.Log("Pressed SPACE");
             rigidBody.AddRelativeForce(Vector3.up * Time.deltaTime * mainThrust);
         }
     }
@@ -35,12 +34,10 @@ public class Movement : MonoBehaviour
     {   
         if(Input.GetKey(KeyCode.A))
         {
-            //Debug.Log("Pressed A - Rotating Left");
             ApplyRotation(1f);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            //Debug.Log("Pressed D - Rotating Right");
             ApplyRotation(-1f);
         }
 
